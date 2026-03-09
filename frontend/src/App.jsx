@@ -17,6 +17,7 @@ import AdminOrders from "./pages/AdminOrders";
 import AdminAddProduct from "./pages/AdminAddProduct";
 import { CartProvider } from './context/CartContext';
 import { AdminProvider } from './context/AdminContext';
+import GoogleSuccess from "./pages/GoogleSuccess";
 
 const ProtectedAdminRoute = ({ children }) => {
   const isAdminLoggedIn = localStorage.getItem('adminToken');
@@ -43,6 +44,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/size-guide" element={<SizeGuide />} />
+            <Route path="/google-success" element={<GoogleSuccess />} />
             <Route path="/category/:categoryName" element={<CategoryPage />} />
             
             {/* Admin Routes */}
