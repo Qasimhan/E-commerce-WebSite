@@ -30,7 +30,7 @@ function Signup() {
     confirmPassword: "",
   });
   const googleLogin = () => {
-    window.open("http://localhost:5000/api/users/google", "_self");
+    window.open("https://e-commerce-backend-production-29a7.up.railway.app/api/users/google", "_self");
   };
 
   // Password strength checker
@@ -76,7 +76,7 @@ function Signup() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/users/signup",
+        "https://e-commerce-backend-production-29a7.up.railway.app/api/users/signup",
         {
           name: user.name,
           email: user.email,
