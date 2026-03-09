@@ -29,7 +29,7 @@ function Signin() {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:5000/api/users/signin", login);
+      const response = await axios.post("https://e-commerce-backend-production-29a7.up.railway.app/api/users/signin", login);
       
       if (response.data.token) {
         // Save token to localStorage
@@ -51,7 +51,7 @@ function Signin() {
     }
   };
   const googleLogin = () => {
-  window.open("http://localhost:5000/api/users/google", "_self");
+  window.open("https://e-commerce-backend-production-29a7.up.railway.app/api/users/google", "_self");
 };
 
   return (
